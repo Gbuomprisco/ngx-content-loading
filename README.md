@@ -5,6 +5,12 @@ Angular component to create SVG loading placeholders. Inspired by [React Content
 
 Please notice this is a work in progress and may not be ready for production usage.
 
+## [Demo](https://angular-b3z9ek.stackblitz.io/)
+
+Have a look at a demo app on [Stackblitz](https://angular-b3z9ek.stackblitz.io/)
+
+More presets and options will follow soon :)
+
 ## Install
 
 
