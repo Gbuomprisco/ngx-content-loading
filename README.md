@@ -1,9 +1,7 @@
 # NgxContentLoading
-```
-Inspired by [React Content Loader](https://github.com/danilowoz/react-content-loader).
-```
 
-Angular component to create SVG loading placeholders.
+Angular component to create SVG loading placeholders. Inspired by [React Content Loader](https://github.com/danilowoz/react-content-loader).
+
 
 Please notice this is a work in progress and may not be ready for production usage.
 
@@ -17,18 +15,19 @@ Please notice this is a work in progress and may not be ready for production usa
 
 ### Import the module
 
-
-    import { NgxContentLoadingModule } from 'ngx-content-loading';
-
+```javascript
+import { NgxContentLoadingModule } from 'ngx-content-loading';
+```
 
 ### Presets
 
 #### Use presets
 
-    <ngx-content-loading [width]="800">
-        <svg:g ngx-facebook-preset></svg:g>
-    </ngx-content-loading>
-
+```html
+<ngx-content-loading [width]="800">
+    <svg:g ngx-facebook-preset></svg:g>
+</ngx-content-loading>
+```
 
 #### Available presets
     - ngx-facebook-preset
@@ -37,7 +36,9 @@ Please notice this is a work in progress and may not be ready for production usa
 
 ### Custom templates
 
-    <ngx-content-loading [width]="800">
-        <svg:g ngx-rect width="50" height="50" y="0" x="0"></svg:g>
-        <svg:g ngx-rect width="150" height="10" y="10" x="60" rx="5" ry="5"></svg:g>
-    </ngx-content-loading>
+```html
+<ngx-content-loading [width]="800">
+    <svg:g ngx-rect width="50" height="50" y="0" x="0"></svg:g>
+    <svg:g ngx-rect width="150" height="10" y="10" x="60" rx="5" ry="5"></svg:g>
+</ngx-content-loading>
+```
