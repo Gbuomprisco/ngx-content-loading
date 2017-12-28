@@ -1,0 +1,34 @@
+<svg:circle
+        [attr.cx]="cx"
+        [attr.cy]="cy"
+        [attr.r]="r"
+        [attr.fill]="linearGradientUrl"
+        [attr.clipPath]="clipPathUrl">
+</svg:circle>
+
+<svg:defs>
+    <svg:clipPath [attr.id]="clipPathId"></svg:clipPath>
+
+    <svg:linearGradient [attr.id]="linearGradientId">
+        <svg:stop ngx-svg-stop
+            [offset]="'0%'"
+            [values]="'-2; 1'"
+            [speed]="content.speed"
+            [color]="content.primaryColor">
+        </svg:stop>
+
+        <svg:stop ngx-svg-stop
+            [offset]="'50%'"
+            [values]="'-1.5; 1.5'"
+            [speed]="content.speed"
+            [color]="content.secondaryColor">
+        </svg:stop>
+
+        <svg:stop ngx-svg-stop
+            [offset]="'100%'"
+            [values]="'-1; 2'"
+            [speed]="content.speed"
+            [color]="content.primaryColor">
+        </svg:stop>
+    </svg:linearGradient>
+</svg:defs>
