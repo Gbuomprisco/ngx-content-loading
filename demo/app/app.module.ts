@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NgxContentLoadingModule } from '../../src/ngx-content-loading.module';
 
-
 @NgModule({
   declarations: [
     AppComponent

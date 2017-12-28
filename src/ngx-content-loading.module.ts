@@ -7,6 +7,7 @@ import { SvgElementComponent } from './ngx-content-loading/svg-element/svg-eleme
 import { SvgStopComponent } from './ngx-content-loading/svg-stop/svg-stop.component';
 import { FacebookPresetComponent } from './ngx-content-loading/facebook-preset/facebook-preset.component';
 import { InstagramPresetComponent } from './ngx-content-loading/instagram-preset/instagram-preset.component';
+import { CircleComponent } from './ngx-content-loading/circle/circle.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { InstagramPresetComponent } from './ngx-content-loading/instagram-preset
   declarations: [
     NgxContentLoadingComponent,
     RectComponent,
+    CircleComponent,
     SvgElementComponent,
     SvgStopComponent,
     FacebookPresetComponent,
@@ -23,6 +25,7 @@ import { InstagramPresetComponent } from './ngx-content-loading/instagram-preset
   exports: [
     NgxContentLoadingComponent,
     RectComponent,
+    CircleComponent,
     FacebookPresetComponent,
     InstagramPresetComponent
   ]

@@ -9,13 +9,6 @@ import { NgxContentLoadingComponent } from '../index';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SvgElementComponent implements OnInit {
-    @Input() public width: string;
-    @Input() public height: string;
-    @Input() public y: string;
-    @Input() public x: string;
-    @Input() public rx: string = Defaults.Rx;
-    @Input() public ry: string = Defaults.Ry;
-
     public clipPathId: string = getId();
     public linearGradientId: string = getId();
 
