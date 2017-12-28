@@ -48,6 +48,7 @@ export class AppModule {}
 #### Available presets
     - ngx-facebook-preset
     - ngx-instagram-preset
+    - ngx-code-preset
 
 
 ### Custom templates
