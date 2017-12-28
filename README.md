@@ -19,32 +19,31 @@ More presets and options will follow soon :)
 
 ## Usage
 
-### Import the module
+### Import the module in your app module
 
 ```javascript
 import { NgxContentLoadingModule } from 'ngx-content-loading';
+
+@NgModule({
+    imports: [ NgxContentLoadingModule ]
+})
+export class AppModule {}
+
 ```
 
 ### Presets
 
 #### Use presets
 
-<<<<<<< HEAD
-    <ngx-content-loading [width]="800">
-        <svg:g ngx-facebook-preset></svg:g>
-    </ngx-content-loading>
-
-    <ngx-content-loading [width]="800" [height]="800">
-        <svg:g ngx-instagram-preset></svg:g>
-    </ngx-content-loading>
-
-=======
 ```html
 <ngx-content-loading [width]="800">
     <svg:g ngx-facebook-preset></svg:g>
 </ngx-content-loading>
+
+<ngx-content-loading [width]="800" [height]="800">
+    <svg:g ngx-instagram-preset></svg:g>
+</ngx-content-loading>
 ```
->>>>>>> 096ce911e156033acb953ba446166893d7eebad9
 
 #### Available presets
     - ngx-facebook-preset
@@ -53,27 +52,24 @@ import { NgxContentLoadingModule } from 'ngx-content-loading';
 
 ### Custom templates
 
-<<<<<<< HEAD
-    <ngx-content-loading [width]="800" [height]="800">
-        <svg:g ngx-circle cx="30" cy="30" r="30"></svg:g>
-        <svg:g ngx-rect width="50" height="50" y="0" x="0"></svg:g>
-        <svg:g ngx-rect width="150" height="10" y="10" x="60" rx="5" ry="5"></svg:g>
-    </ngx-content-loading>
-
-## API
-
-**`width`** - [**`?string`**] (default: 400)
-**`height`** - [**`?string`**] (default: 130)
-**`preserveAspectRatio`** - [**`?string`**] (default: xMidYMid meet)
-**`speed`** - [**`?string`**] (default: 1000ms)
-**`primaryColor`** - [**`?string`**] (default: #f3f3f3)
-**`secondaryColor`** - [**`?string`**] (default: #ecebeb)
-
-=======
 ```html
-<ngx-content-loading [width]="800">
+<ngx-content-loading [width]="800" [height]="800">
+    <svg:g ngx-circle cx="30" cy="30" r="30"></svg:g>
     <svg:g ngx-rect width="50" height="50" y="0" x="0"></svg:g>
     <svg:g ngx-rect width="150" height="10" y="10" x="60" rx="5" ry="5"></svg:g>
 </ngx-content-loading>
 ```
->>>>>>> 096ce911e156033acb953ba446166893d7eebad9
+
+## API
+
+- **`width`** - [**`?string`**] (default: 400)
+
+- **`height`** - [**`?string`**] (default: 130)
+
+- **`preserveAspectRatio`** - [**`?string`**] (default: xMidYMid meet)
+
+- **`speed`** - [**`?string`**] (default: 1000ms)
+
+- **`primaryColor`** - [**`?string`**] (default: #f3f3f3)
+
+- **`secondaryColor`** - [**`?string`**] (default: #ecebeb)
