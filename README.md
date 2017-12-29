@@ -69,7 +69,23 @@ export class AppModule {}
 | secondaryColor      | _String_ | `#ecebeb`       | Animation color                                                 |
 | preserveAspectRatio | _String_ | `xMidYMid meet` | Aspect ratio option of SVG                                      |
 
+## Development
 
+Fork the repo then clone it
+
+`$ git clone git@github.com:YourUsername/ngx-content-loading.git && cd ngx-content-loading`
+
+Install the dependencies
+
+`$ yarn` or `npm i`
+
+Run the demo app
+
+`$ npm start`
+
+## License
+
+[MIT](https://github.com/gbuomprisco/ngx-content-loading/blob/master/LICENSE)
 
 Please notice this is a work in progress and may not be ready for production usage.
 
