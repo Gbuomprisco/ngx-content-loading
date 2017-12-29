@@ -10,6 +10,7 @@ import { InstagramPresetComponent } from './ngx-content-loading/instagram-preset
 import { CircleComponent } from './ngx-content-loading/circle/circle.component';
 import { CodePresetComponent } from './ngx-content-loading/code-preset/code-preset.component';
 import { BulletListPresetComponent } from './ngx-content-loading/bullet-list-preset/bullet-list-preset.component';
+import { ListPresetComponent } from './ngx-content-loading/list-preset/list-preset.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { BulletListPresetComponent } from './ngx-content-loading/bullet-list-pre
     FacebookPresetComponent,
     InstagramPresetComponent,
     CodePresetComponent,
-    BulletListPresetComponent
+    BulletListPresetComponent,
+    ListPresetComponent
   ],
   exports: [
     NgxContentLoadingComponent,
@@ -33,7 +35,8 @@ import { BulletListPresetComponent } from './ngx-content-loading/bullet-list-pre
     FacebookPresetComponent,
     InstagramPresetComponent,
     CodePresetComponent,
-    BulletListPresetComponent
+    BulletListPresetComponent,
+    ListPresetComponent
   ]
 })
 export class NgxContentLoadingModule { }

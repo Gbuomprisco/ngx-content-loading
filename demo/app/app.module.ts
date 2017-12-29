@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NgxContentLoadingModule } from '../../src/ngx-content-loading.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import { NgxContentLoadingModule } from '../../src/ngx-content-loading.module';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     NgxContentLoadingModule
   ],
   providers: [],

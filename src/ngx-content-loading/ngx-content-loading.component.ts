@@ -9,9 +9,6 @@ import { ChangeDetectionStrategy, Component, OnInit, Input } from '@angular/core
 })
 export class NgxContentLoadingComponent implements OnInit {
     @Input()
-    public preserveAspectRatio = Defaults.PreserveAspectRatio;
-
-    @Input()
     public width = Defaults.Width;
 
     @Input()
@@ -25,6 +22,9 @@ export class NgxContentLoadingComponent implements OnInit {
 
     @Input()
     public speed: string = Defaults.Speed;
+
+    @Input()
+    public preserveAspectRatio = Defaults.PreserveAspectRatio;
 
     public get viewBox(): string {
         return `0 0 ${this.width} ${this.height}`;

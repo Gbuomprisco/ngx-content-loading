@@ -45,6 +45,7 @@ export class AppModule {}
     - ngx-facebook-preset
     - ngx-instagram-preset
     - ngx-code-preset
+    - ngx-list-preset
     - ngx-bullet-list-preset
 
 
