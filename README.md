@@ -2,14 +2,10 @@
 
 Angular component to create SVG loading placeholders. Inspired by the awesome [React Content Loader](https://github.com/danilowoz/react-content-loader).
 
-
-Please notice this is a work in progress and may not be ready for production usage.
-
 ## [Demo](https://ngx-content-loading.stackblitz.io/)
 
 Have a look at a demo app on [Stackblitz](https://ngx-content-loading.stackblitz.io/)
 
-More presets and options will follow soon :)
 
 ## Install
 
@@ -52,7 +48,7 @@ export class AppModule {}
     - ngx-bullet-list-preset
 
 
-### Custom templates
+### Define custom shapes
 
 ```html
 <ngx-content-loading [width]="800" [height]="800">
@@ -64,14 +60,17 @@ export class AppModule {}
 
 ## API
 
-- **`width`** - [**`?string`**] (default: 400)
+| Name                | Type     | Default         | Description                                                     |
+| ------------------- | -------- | --------------- | --------------------------------------------------------------- |
+| speed               | _Number_ | `1000ms`        | Animation speed specified in s or ms                            |
+| width               | _Number_ | `400`           | **viewBox** width of SVG                                        |
+| height              | _Number_ | `130`           | **viewBox** height of SVG                                       |
+| primaryColor        | _String_ | `#f3f3f3`       | Background the SVG                                              |
+| secondaryColor      | _String_ | `#ecebeb`       | Animation color                                                 |
+| preserveAspectRatio | _String_ | `xMidYMid meet` | Aspect ratio option of SVG                                      |
 
-- **`height`** - [**`?string`**] (default: 130)
 
-- **`preserveAspectRatio`** - [**`?string`**] (default: xMidYMid meet)
 
-- **`speed`** - [**`?string`**] (default: 1000ms)
+Please notice this is a work in progress and may not be ready for production usage.
 
-- **`primaryColor`** - [**`?string`**] (default: #f3f3f3)
-
-- **`secondaryColor`** - [**`?string`**] (default: #ecebeb)
+More presets and options will follow soon :)
