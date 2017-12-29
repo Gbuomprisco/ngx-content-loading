@@ -49,6 +49,7 @@ export class AppModule {}
     - ngx-facebook-preset
     - ngx-instagram-preset
     - ngx-code-preset
+    - ngx-bullet-list-preset
 
 
 ### Custom templates

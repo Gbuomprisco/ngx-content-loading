@@ -9,6 +9,7 @@ import { FacebookPresetComponent } from './ngx-content-loading/facebook-preset/f
 import { InstagramPresetComponent } from './ngx-content-loading/instagram-preset/instagram-preset.component';
 import { CircleComponent } from './ngx-content-loading/circle/circle.component';
 import { CodePresetComponent } from './ngx-content-loading/code-preset/code-preset.component';
+import { BulletListPresetComponent } from './ngx-content-loading/bullet-list-preset/bullet-list-preset.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { CodePresetComponent } from './ngx-content-loading/code-preset/code-pres
     SvgStopComponent,
     FacebookPresetComponent,
     InstagramPresetComponent,
-    CodePresetComponent
+    CodePresetComponent,
+    BulletListPresetComponent
   ],
   exports: [
     NgxContentLoadingComponent,
@@ -30,7 +32,8 @@ import { CodePresetComponent } from './ngx-content-loading/code-preset/code-pres
     CircleComponent,
     FacebookPresetComponent,
     InstagramPresetComponent,
-    CodePresetComponent
+    CodePresetComponent,
+    BulletListPresetComponent
   ]
 })
 export class NgxContentLoadingModule { }
