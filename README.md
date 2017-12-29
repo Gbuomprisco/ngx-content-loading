@@ -52,11 +52,18 @@ export class AppModule {}
 ### Define custom shapes
 
 ```html
-<ngx-content-loading [width]="800" [height]="800">
-    <svg:g ngx-circle cx="30" cy="30" r="30"></svg:g>
-    <svg:g ngx-rect width="50" height="50" y="0" x="0"></svg:g>
-    <svg:g ngx-rect width="150" height="10" y="10" x="60" rx="5" ry="5"></svg:g>
-</ngx-content-loading>
+<ngx-content-loading 
+    [speed]="'1500ms'"
+    [width]="1000"
+    [height]="300"
+    [primaryColor]="'#222'"
+    [secondaryColor]="'#5e5e5e'">
+    <svg:g ngx-circle cy="30" cx="30" r="30" ry="5"></svg:g>
+      <svg:g ngx-rect width="150" height="10" y="10" x="70" rx="5" ry="5"></svg:g>
+      <svg:g ngx-rect width="90" height="10" y="40" x="70" rx="5" ry="5"></svg:g>
+      <svg:g ngx-rect width="210" height="10" y="70" x="0" rx="5" ry="5"></svg:g>
+      <svg:g ngx-rect width="240" height="10" y="100" x="0" rx="5" ry="5"></svg:g>
+  </ngx-content-loading>
 ```
 
 ## API
