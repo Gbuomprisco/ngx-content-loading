@@ -1,5 +1,9 @@
+<ng-content select="[before-svg]"></ng-content>
+
 <svg version="1.1"
     [attr.preserveAspectRatio]="preserveAspectRatio"
     [attr.viewBox]="viewBox">
         <ng-content></ng-content>
 </svg>
+
+<ng-content select="[after-svg]"></ng-content>

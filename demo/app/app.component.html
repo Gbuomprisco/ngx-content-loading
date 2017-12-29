@@ -1,21 +1,52 @@
 <div class="container">
-    <ngx-content-loading [width]="800" [height]="200">
-        <svg:g ngx-facebook-preset></svg:g>
-    </ngx-content-loading>
+    <div>
+        <h3>Facebook</h3>
+        <ngx-content-loading>
+            <svg:g ngx-facebook-preset></svg:g>
+        </ngx-content-loading>
+    </div>
 
-    <ngx-content-loading [width]="800" [height]="300">
-        <svg:g ngx-instagram-preset></svg:g>
-    </ngx-content-loading>
+   <div>
+       <h3>Instagram</h3>
+        <ngx-content-loading>
+            <svg:g ngx-instagram-preset></svg:g>
+        </ngx-content-loading>
+   </div>
 
-    <ngx-content-loading [width]="800" [height]="300">
-        <svg:g ngx-code-preset></svg:g>
-    </ngx-content-loading>
+   <div>
+       <h3>Code</h3>
+        <ngx-content-loading>
+            <svg:g ngx-code-preset></svg:g>
+        </ngx-content-loading>
+   </div>
 
-    <ngx-content-loading [width]="800" [height]="300">
-        <svg:g ngx-bullet-list-preset></svg:g>
-    </ngx-content-loading>
+    <div>
+        <h3>Bullet List</h3>
+        <ngx-content-loading>
+            <svg:g ngx-bullet-list-preset></svg:g>
+        </ngx-content-loading>
+    </div>
 
-    <ngx-content-loading [width]="800" [height]="300">
-        <svg:g ngx-list-preset></svg:g>
-    </ngx-content-loading>
+    <div>
+        <h3>List</h3>
+        <ngx-content-loading>
+            <svg:g ngx-list-preset></svg:g>
+        </ngx-content-loading>
+    </div>
+
+    <div>
+        <h3>Custom</h3>
+
+        <ngx-content-loading
+            [speed]="'1500ms'"
+            [primaryColor]="'#222'"
+            [secondaryColor]="'#5e5e5e'">
+
+            <svg:g ngx-circle cy="30" cx="30" r="30" ry="5"></svg:g>
+            <svg:g ngx-rect width="150" height="10" y="10" x="70" rx="5" ry="5"></svg:g>
+            <svg:g ngx-rect width="90" height="10" y="40" x="70" rx="5" ry="5"></svg:g>
+            <svg:g ngx-rect width="210" height="10" y="70" x="0" rx="5" ry="5"></svg:g>
+            <svg:g ngx-rect width="240" height="10" y="100" x="0" rx="5" ry="5"></svg:g>
+      </ngx-content-loading>
+    </div>
 </div>
