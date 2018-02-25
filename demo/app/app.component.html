@@ -47,6 +47,14 @@
             <svg:g ngx-rect width="90" height="10" y="40" x="70" rx="5" ry="5"></svg:g>
             <svg:g ngx-rect width="210" height="10" y="70" x="0" rx="5" ry="5"></svg:g>
             <svg:g ngx-rect width="240" height="10" y="100" x="0" rx="5" ry="5"></svg:g>
-      </ngx-content-loading>
+        </ngx-content-loading>
+
+        <ngx-content-loading
+            [speed]="'1500ms'"
+            [primaryColor]="'#222'"
+            [secondaryColor]="'#5e5e5e'">
+
+            <svg:text>Text</svg:text>
+        </ngx-content-loading>
     </div>
 </div>

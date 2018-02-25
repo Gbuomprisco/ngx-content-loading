@@ -26,7 +26,7 @@ export class SvgElementComponent implements OnInit {
     }
 }
 
-function getId(): string {
+export function getId(): string {
     const id = performance.now() * Math.random();
     return id.toString();
 }
