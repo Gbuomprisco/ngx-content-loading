@@ -1,4 +1,4 @@
-# ngx-content-loading v0.0.6
+# ngx-content-loading v0.0.7
 
 Angular component to create SVG loading placeholders. Inspired by the awesome [React Content Loader](https://github.com/danilowoz/react-content-loader).
 
@@ -76,6 +76,31 @@ export class AppModule {}
 | primaryColor        | _String_ | `#f3f3f3`       | Background the SVG                                              |
 | secondaryColor      | _String_ | `#ecebeb`       | Animation color                                                 |
 | preserveAspectRatio | _String_ | `xMidYMid meet` | Aspect ratio option of SVG                                      |
+
+
+### Transclude elements before and after the SVG element
+
+```html
+<ngx-content-loading 
+    [speed]="'1500ms'"
+    [width]="1000"
+    [height]="300"
+    [primaryColor]="'#222'"
+    [secondaryColor]="'#5e5e5e'">
+        <b before-svg>
+            I am transcluded before the svg
+        </b>
+        <svg:g ngx-circle cy="30" cx="30" r="30" ry="5"></svg:g>
+        <svg:g ngx-rect width="150" height="10" y="10" x="70" rx="5" ry="5"></svg:g>
+        <svg:g ngx-rect width="90" height="10" y="40" x="70" rx="5" ry="5"></svg:g>
+        <svg:g ngx-rect width="210" height="10" y="70" x="0" rx="5" ry="5"></svg:g>
+        <svg:g ngx-rect width="240" height="10" y="100" x="0" rx="5" ry="5"></svg:g>
+        
+        <b after-svg>
+            I am transcluded after the svg
+        </b>
+  </ngx-content-loading>
+```
 
 ## Development
 
