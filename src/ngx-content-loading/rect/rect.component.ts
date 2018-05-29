@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SvgElementComponent } from '../svg-element/svg-element.component';
 import { Defaults } from '../defaults.enum';
+import { NgxContentLoadingComponent } from '../ngx-content-loading.component';
 
 @Component({
   selector: '[ngx-rect]',
@@ -16,5 +17,9 @@ export class RectComponent extends SvgElementComponent {
     @Input() public height: string;
     @Input() public primaryColor: string;
     @Input() public secondaryColor: string;
-    @Input() public speed: number;
+    @Input() public speed: string;
+
+    constructor(public content: NgxContentLoadingComponent) {
+        super(content);
+    }
 }
