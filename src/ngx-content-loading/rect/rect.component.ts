@@ -14,4 +14,7 @@ export class RectComponent extends SvgElementComponent {
     @Input() public ry: string = Defaults.Ry;
     @Input() public width: string;
     @Input() public height: string;
+    @Input() public primaryColor: string;
+    @Input() public secondaryColor: string;
+    @Input() public speed: number;
 }
