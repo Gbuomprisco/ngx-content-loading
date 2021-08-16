@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: '[ngx-instagram-preset]',
@@ -6,11 +6,5 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   styleUrls: ['./instagram-preset.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class InstagramPresetComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class InstagramPresetComponent {
 }

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ChangeDetectionStrategy, HostBinding } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy, HostBinding } from '@angular/core';
 
 @Component({
   selector: '[ngx-svg-stop]',
@@ -6,9 +6,10 @@ import { Component, Input, OnInit, ChangeDetectionStrategy, HostBinding } from '
   styleUrls: ['./svg-stop.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SvgStopComponent implements OnInit {
-    @Input() public speed: string;
-    @Input() public values: string;
+export class SvgStopComponent {
+    @Input() speed: string;
+    @Input() values: string;
+    @Input() opacity: string;
 
     @HostBinding('attr.offset')
     @Input()
@@ -17,7 +18,4 @@ export class SvgStopComponent implements OnInit {
     @HostBinding('attr.stop-color')
     @Input()
     public color: string;
-
-    ngOnInit() {
-    }
 }

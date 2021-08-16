@@ -1,5 +1,4 @@
-import { Defaults } from './../defaults.enum';
-import { ChangeDetectionStrategy, Component, OnInit, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgxContentLoadingComponent } from '../index';
 
 @Component({
@@ -8,7 +7,7 @@ import { NgxContentLoadingComponent } from '../index';
   styleUrls: ['./svg-element.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SvgElementComponent implements OnInit {
+export class SvgElementComponent {
     public clipPathId: string = getId();
     public linearGradientId: string = getId();
 
@@ -21,9 +20,6 @@ export class SvgElementComponent implements OnInit {
     }
 
     constructor(public content: NgxContentLoadingComponent) { }
-
-    ngOnInit() {
-    }
 }
 
 export function getId(): string {

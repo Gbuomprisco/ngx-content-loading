@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SvgElementComponent } from '../svg-element/svg-element.component';
 import { Defaults } from '../defaults.enum';
 import { NgxContentLoadingComponent } from '../ngx-content-loading.component';

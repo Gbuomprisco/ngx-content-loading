@@ -1,5 +1,5 @@
 import { Defaults } from './defaults.enum';
-import { ChangeDetectionStrategy, Component, OnInit, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
     selector: 'ngx-content-loading',
@@ -7,12 +7,12 @@ import { ChangeDetectionStrategy, Component, OnInit, Input } from '@angular/core
     styleUrls: [ './ngx-content-loading.component.scss' ],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NgxContentLoadingComponent implements OnInit {
+export class NgxContentLoadingComponent {
     @Input()
-    public width = Defaults.Width;
+    public width: string | number = Defaults.Width;
 
     @Input()
-    public height = Defaults.Height;
+    public height: string | number = Defaults.Height;
 
     @Input()
     public primaryColor: string = Defaults.PrimaryColor;
@@ -24,12 +24,10 @@ export class NgxContentLoadingComponent implements OnInit {
     public speed: string = Defaults.Speed;
 
     @Input()
-    public preserveAspectRatio = Defaults.PreserveAspectRatio;
+    public preserveAspectRatio: string = Defaults.PreserveAspectRatio;
 
-    public get viewBox(): string {
+    get viewBox(): string {
         return `0 0 ${this.width} ${this.height}`;
     }
-
-    public ngOnInit(): void {}
 }
 
